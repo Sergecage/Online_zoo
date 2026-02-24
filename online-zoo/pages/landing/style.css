@@ -5,6 +5,13 @@
           padding: 0;
 }
 
+:root{
+    --col-green: #00A092;
+    --col-white: #FFF; 
+    --col-orange: #F58021;
+    --bg-purple: #20113D;
+}
+
 body {
     font-family: "Montserrat", sans-serif;
 }
