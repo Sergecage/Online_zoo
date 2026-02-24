@@ -21,7 +21,8 @@ a{
 
 .header{
     width: 100%;
+    position: sticky;
+    background: var(--col-orange);
     .logo{
-        position: sticky;
     }
 }
