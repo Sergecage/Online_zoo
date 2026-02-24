@@ -19,6 +19,10 @@ a{
     text-decoration: none;
 }
 
+.container {
+    
+}
+
 .header{
     width: 100%;
     position: sticky;
