@@ -34,11 +34,18 @@ section{
     padding: 48px 16px;
 }
 
+ul{
+    list-style: none;
+}
+
 .header{
     width: 100%;
     position: sticky;
     background: var(--col-orange);
     display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 16px;
     .logo{
     }
 }
