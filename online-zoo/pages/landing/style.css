@@ -54,5 +54,15 @@ ul{
     display: none;
 }
 
+.burger{
+    position: relative;
+    width: 32px;
+    height: 24px;
+}
+
+#burger-tg{
+    display: none;
+}
+
 
 @media (min-width: 640px){}
