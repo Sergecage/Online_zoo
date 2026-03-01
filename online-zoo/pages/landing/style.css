@@ -20,13 +20,16 @@ a{
 }
 
 .container {
-    
+    align-items: center;
 }
 
 .header{
     width: 100%;
     position: sticky;
     background: var(--col-orange);
+    display: flex;
     .logo{
     }
 }
+
+@media (min-width: 640px){}
