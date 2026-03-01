@@ -1,0 +1,156 @@
+*, *:before, *:after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+          margin: 0;
+          padding: 0;
+}
+
+:root{
+    --col-green: #00A092;
+    --col-white: #FFF; 
+    --col-orange: #F58021;
+    --bg-purple: #20113D;
+    --font-main: 700px;
+    --font-mob: 600px;
+    --font-size-mob: 18px;
+}
+
+body {
+    font-family: "Montserrat", sans-serif;
+}
+a{
+    text-decoration: none;
+    cursor: pointer;
+    text-transform: uppercase;
+}
+
+img{
+    max-width: 100%;
+    display: block;
+}
+
+.container {
+    width: 100%;
+}
+
+section{
+    padding: 48px 16px;
+}
+
+ul{
+    list-style: none;
+}
+
+li, a{
+    color: var(--col-white);
+    font-weight: var(--font-mob);
+    font-size: var(--font-size-mob);
+    text-align: center;
+}
+
+.header{
+    width: 100%;
+    position: sticky;
+    background: var(--col-orange);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding:  16px;
+    z-index: 0;
+}
+.nav {
+    position: fixed;
+    background-color: var(--bg-purple);
+    z-index: 1;
+    transform: translateX(100%);
+    transition: transform 0.3s ease;
+    width: 233px;
+    height: 70vh;
+    top: 0;
+    right: 0;
+    ul{
+        padding: 10rem 3rem;
+        li{
+            padding: 2px;
+            margin-top: 2rem;
+        }
+    }
+}
+ .nav-icons{
+    display: none;
+}
+
+.burger_menu{
+    position: fixed;
+    top: 20px;
+    right: 16px;
+    width: 32px;
+    height: 24px;
+    z-index: 9;
+}
+
+#burger-tg{
+    display: none;
+}
+
+.burger-btn{
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.burger-btn span{
+    height: 3px;
+    width: 100%;
+    border-radius: 2px;
+    transition: 0.3s ease;
+    background-color: black;
+    z-index: 9;
+}
+
+#burger-tg:checked + .burger-btn span:nth-child(1) {
+  transform: translateY(10px) rotate(45deg);
+  background: white;
+}
+
+#burger-tg:checked + .burger-btn span:nth-child(2) {
+  opacity: 0;
+}
+
+#burger-tg:checked + .burger-btn span:nth-child(3) {
+  transform: translateY(-10px) rotate(-45deg);
+  background: white;
+}
+
+#burger-tg:checked ~ .nav {
+  display: flex;
+  transform: translateX(0);
+}
+
+
+@media (min-width: 640px){}
+
+@media (min-width: 1200px) {
+  a{
+    color: black;
+  }
+    .burger_menu {
+    display: none;
+  }
+
+  .nav {
+    position: static;
+    transform: none;
+    height: auto;
+    width: auto;
+    background: transparent;
+  }
+
+  .nav ul, .nav-icons {
+    display: flex;
+    gap: 32px;
+    padding: 0;
+  }
+}
