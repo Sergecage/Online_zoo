@@ -28,7 +28,6 @@ img{
 
 .container {
     width: 100%;
-    overflow: hidden;
 }
 
 section{
@@ -63,7 +62,7 @@ li, a{
     transform: translateX(100%);
     transition: transform 0.3s ease;
     width: 233px;
-    height: 600px;
+    height: 70vh;
     top: 0;
     right: 0;
     ul{
@@ -83,7 +82,7 @@ li, a{
     right: 16px;
     width: 32px;
     height: 24px;
-    z-index: 1000;
+    z-index: 9;
 }
 
 #burger-tg{
@@ -98,12 +97,13 @@ li, a{
     flex-direction: column;
     justify-content: space-between;
 }
-.burger-btn .span{
+.burger-btn span{
     height: 3px;
     width: 100%;
     border-radius: 2px;
     transition: 0.3s ease;
     background-color: black;
+    z-index: 9;
 }
 
 #burger-tg:checked + .burger-btn span:nth-child(1) {
