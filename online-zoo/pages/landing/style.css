@@ -178,6 +178,7 @@ button{
     width: auto;
     background: transparent;
     right: 35%;
+    top: 2.5%;
   }
 
   .nav ul, .nav-icons {
