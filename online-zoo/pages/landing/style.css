@@ -62,9 +62,13 @@ button{
     height: 45px;
     background-color: var(--col-orange);
     color: var(--col-white);
+    cursor: pointer;
     a{
         font-weight: var(--font-mob);
         font-size: var(--font-size-mob);
+    }
+    &:hover{
+        opacity: 0.5;
     }
 }
 
