@@ -129,6 +129,14 @@ li, a{
   transform: translateX(0);
 }
 
+.watch h1{
+    color: var(--col-green);
+    font-weight: 800;
+    font-size: 40px;
+    text-transform: uppercase;
+    letter-spacing: 0.01em;
+}
+
 
 @media (min-width: 640px){}
 
