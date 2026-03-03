@@ -179,7 +179,7 @@ button{
     width: auto;
     background: transparent;
     right: 35%;
-    top: 2.5%;
+    top: 1%;
   }
 
   .nav ul, .nav-icons{
@@ -188,5 +188,12 @@ button{
     padding: 0;
   }
 
+  .nav-icons ul{
+    gap: 1rem;
+  }
+
+  .btn a {
+    color: var(--col-white);
+  }
 
 }
