@@ -40,7 +40,6 @@ section{
 
 ul{
     list-style: none;
-    display: flex;
 }
 
 li, a{
@@ -189,6 +188,7 @@ button{
   }
 
   .nav-icons ul{
+    display: flex;
     gap: 1rem;
   }
 
