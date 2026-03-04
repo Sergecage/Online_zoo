@@ -207,4 +207,14 @@ button{
     color: var(--col-white);
   }
 
+  .main-img{
+    overflow: visible;
+  }
+
+  .main-img img {
+    width: 100%;
+    max-width: 100%;
+    transform: none;
+  }
+
 }
