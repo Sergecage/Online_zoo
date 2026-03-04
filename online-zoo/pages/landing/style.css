@@ -161,6 +161,17 @@ button{
     letter-spacing: 0.01em;
 }
 
+.main-img{
+    width: 100%;
+    overflow: hidden;
+}
+
+.main-img img{
+    width: 140%;
+    max-width: none;
+    transform: translateX(-20%);
+}
+
 
 @media (min-width: 640px){}
 
