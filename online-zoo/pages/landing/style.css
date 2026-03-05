@@ -209,6 +209,10 @@ h2{
     justify-content: space-between;
 }
 
+.animal1{
+    background: url(../../assets/images/koala.jpg);
+}
+
 @media (min-width: 640px){}
 
 @media (min-width: 1200px) {
