@@ -185,6 +185,25 @@ h2{
     transform: translateX(-20%);
 }
 
+.donation{
+    background-color: var(--bg-purple);
+    color: var(--col-white);
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    h2{
+        color: var(--col-white);
+        font-weight: 800;
+    }
+    form{
+        border-radius: 5px;
+        border: 2px white;
+        padding: 26px 45px;
+        width: 300px;
+        height: 45px;
+    }
+}
 
 @media (min-width: 640px){}
 
