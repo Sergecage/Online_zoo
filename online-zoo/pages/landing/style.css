@@ -35,7 +35,7 @@ img{
 }
 
 section{
-    padding: 48px 16px;
+    padding: 28px 16px;
 }
 
 ul{
@@ -57,12 +57,15 @@ p{
 
 button{
     border-radius: 5px;
+    border: transparent;
     padding: 26px 45px;
     width: 300px;
     height: 45px;
     background-color: var(--col-orange);
     color: var(--col-white);
     cursor: pointer;
+    display: flex;
+    align-items: center;
     a{
         font-weight: var(--font-mob);
         font-size: var(--font-size-mob);
@@ -70,6 +73,14 @@ button{
     &:hover{
         opacity: 0.5;
     }
+}
+
+h2{
+    color: var(--col-green);
+}
+
+.pop-up{
+    display: none;
 }
 
 .header{
@@ -161,6 +172,19 @@ button{
     letter-spacing: 0.01em;
 }
 
+.main-img{
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+    z-index: 0;
+}
+
+.main-img img{
+    width: 140%;
+    max-width: none;
+    transform: translateX(-20%);
+}
+
 
 @media (min-width: 640px){}
 
@@ -168,21 +192,42 @@ button{
   a{
     color: black;
   }
-    .burger_menu {
+    .burger-btn {
     display: none;
   }
 
   .nav {
-    position: static;
     transform: none;
     height: auto;
     width: auto;
     background: transparent;
+    right: 35%;
+    top: 1%;
   }
 
-  .nav ul, .nav-icons {
+  .nav ul, .nav-icons{
     display: flex;
     gap: 32px;
     padding: 0;
   }
+
+  .nav-icons ul{
+    display: flex;
+    gap: 1rem;
+  }
+
+  .btn a {
+    color: var(--col-white);
+  }
+
+  .main-img{
+    overflow: visible;
+  }
+
+  .main-img img {
+    width: 100%;
+    max-width: 100%;
+    transform: none;
+  }
+
 }
