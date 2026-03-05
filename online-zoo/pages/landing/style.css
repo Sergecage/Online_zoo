@@ -175,6 +175,8 @@ h2{
 .main-img{
     width: 100%;
     overflow: hidden;
+    position: relative;
+    z-index: 0;
 }
 
 .main-img img{
