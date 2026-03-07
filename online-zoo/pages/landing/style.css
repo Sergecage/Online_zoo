@@ -213,6 +213,10 @@ h2{
     background: url(../../assets/images/koala.jpg);
 }
 
+.pop-up{
+    background: url(../../assets/images/PopUpPic.svg);
+}
+
 @media (min-width: 640px){}
 
 @media (min-width: 1200px) {
