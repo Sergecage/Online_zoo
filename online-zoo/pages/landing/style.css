@@ -77,6 +77,8 @@ button{
 
 h2{
     color: var(--col-green);
+    text-transform: uppercase;
+    margin-bottom: 1rem;
 }
 
 .pop-up{
@@ -216,6 +218,11 @@ h2{
 .pop-up{
     background: url(../../assets/images/PopUpPic.svg);
 }
+
+.meet-friends .meet-container{
+    text-align: center;
+}
+    
 
 @media (min-width: 640px){}
 
