@@ -223,6 +223,14 @@ h2{
 .arrows{
     display: none;
 }
+
+.animals-slide{
+    display: flex;
+}
+
+.animal-2, .animal-3, .animal-4{
+    display: none;
+}
     
 
 @media (min-width: 640px){}
