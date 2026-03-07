@@ -228,6 +228,16 @@ h2{
     display: flex;
 }
 
+.animal-1, .animal-2, .animal-3, .animal-4{
+    background-color: var(--bg-purple);
+}
+
+.animal-1{
+    .top-animal{
+    background-image: url(../../assets/images/8Australian_Koala-1.svg);
+}
+}
+
 .animal-2, .animal-3, .animal-4{
     display: none;
 }
