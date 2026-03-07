@@ -235,10 +235,14 @@ h2{
 .animal-1{
     .top-animal{
     background-image: url(../../assets/images/8Australian_Koala-1.svg);
+    width: 300px;
+    height: 600px;
+    background-size:contain;
+    background-repeat: no-repeat;
 }
 }
 
-.animal-2, .animal-3, .animal-4{
+.animal-2, .animal-3, .animal-4, .animals-slide-2{
     display: none;
 }
     
