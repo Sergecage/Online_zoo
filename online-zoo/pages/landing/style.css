@@ -83,6 +83,7 @@ h2{
 
 .pop-up{
     display: none;
+    background: url(../../assets/images/PopUpPic.svg);
 }
 
 .header{
@@ -215,12 +216,12 @@ h2{
     background: url(../../assets/images/koala.jpg);
 }
 
-.pop-up{
-    background: url(../../assets/images/PopUpPic.svg);
-}
-
 .meet-friends .meet-container{
     text-align: center;
+}
+
+.arrows{
+    display: none;
 }
     
 
