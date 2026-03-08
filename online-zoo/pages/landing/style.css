@@ -81,6 +81,10 @@ h2{
     margin-bottom: 1rem;
 }
 
+h4{
+    background-color: var(--bg-purple);
+}
+
 .pop-up{
     display: none;
     background: url(../../assets/images/PopUpPic.svg);
@@ -224,7 +228,7 @@ h2{
     display: none;
 }
 
-.animals-slide{
+.animals-slide,.animals-slide-2{
     display: flex;
 }
 
@@ -232,7 +236,7 @@ h2{
     background-color: var(--bg-purple);
 }
 
-.animal-1{
+.animal-2{
     .top-animal{
     background-image: url(../../assets/images/Koala_card.svg);
     width: 300px;
@@ -250,8 +254,12 @@ h2{
 }
 }
 
-.animal-2, .animal-3, .animal-4, .animals-slide-2{
+.animal-1, .animal-3, .animal-4, .animals-slide{
     display: none;
+}
+
+.left-h4{
+    position: relative;
 }
     
 
