@@ -266,6 +266,11 @@ h4{
     position: relative;
     top: 19rem;
 }
+
+.pay-and-feed .pay-container{
+    background: var(--bg-purple);
+    color: var(--col-white);
+}
     
 
 @media (min-width: 640px){}
