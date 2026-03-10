@@ -281,7 +281,7 @@ h4{
     text-align: center;
 }
 
-.pay-title{
+.pay-title, .users-title{
     color: var(--col-white);
 }
 
