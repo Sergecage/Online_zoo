@@ -270,8 +270,18 @@ h4{
 .pay-and-feed .pay-container{
     background: var(--bg-purple);
     color: var(--col-white);
+    text-align: center;
 }
-    
+
+.pay-title{
+    color: var(--col-white);
+}
+
+.payline{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
 
 @media (min-width: 640px){}
 
