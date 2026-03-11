@@ -314,6 +314,10 @@ h4{
     border-radius: 5%;
 }
 
+.care{
+    background-color: var(--col-white);
+}
+
 @media (min-width: 640px){}
 
 @media (min-width: 1200px) {
