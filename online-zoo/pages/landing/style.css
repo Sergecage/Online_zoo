@@ -308,6 +308,12 @@ h4{
     padding: 1rem 0.2rem;
 }
 
+.choose-leave{
+    text-transform: uppercase;
+    border: 2px solid white;
+    border-radius: 5%;
+}
+
 @media (min-width: 640px){}
 
 @media (min-width: 1200px) {
