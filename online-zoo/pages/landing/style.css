@@ -295,6 +295,10 @@ h4{
     background: linear-gradient(177.34deg, #20113D 7.26%, rgba(32, 17, 61, 0) 14.89%), linear-gradient(144.77deg, #20113D 18.53%, rgba(32, 17, 61, 0) 46.43%), url(../../assets/images/Panda-back.svg) no-repeat;;
 }
 
+.users .arrows{
+    display: none;
+}
+
 .text-boxes{
     display: flex;
     flex-direction: column;
