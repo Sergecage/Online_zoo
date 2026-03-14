@@ -409,4 +409,8 @@ h4{
 .animal-1, .animal-3, .animal-4, .animals-slide{
     display: flex;
 }
+
+.animals-slide, .animals-slide-2{
+    gap: 2rem;
+}
 }
