@@ -254,6 +254,7 @@ h4{
     height: 600px;
     background-size:contain;
     background-repeat: no-repeat;
+    color: var(--col-white);
     .animal-button{
         background: transparent;
         text-transform: uppercase;
@@ -262,6 +263,34 @@ h4{
         position: relative;
     }
 }
+}
+
+.animals-slide .animal-1 .top-animal{
+    background-image: url(../../assets/images/Panda_card.svg);
+}
+
+.animals-slide .animal-2 .top-animal{
+    background-image: url(../../assets/images/Lemur_card.svg);
+}
+
+.animals-slide .animal-3 .top-animal{
+    background-image: url(../../assets/images/Gorrila_card.svg);
+}
+
+.animals-slide .animal-4 .top-animal{
+    background-image: url(../../assets/images/Alligator_card.svg);
+}
+
+.animals-slide-2 .animal-1 .top-animal{
+    background-image: url(../../assets/images/Eagle_card.svg);
+}
+
+.animals-slide-2 .animal-3 .top-animal{
+    background-image: url(../../assets/images/Lion_card.svg);
+}
+
+.animals-slide-2 .animal-4 .top-animal{
+    background-image: url(../../assets/images/Tiger_card.svg);
 }
 
 .animal-1, .animal-3, .animal-4, .animals-slide{
