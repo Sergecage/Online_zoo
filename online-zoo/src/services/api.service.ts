@@ -9,3 +9,13 @@ export async function getPets() {
 
     return response.json();
 }
+
+export async function getReviews(){
+    const response = await fetch(`${API_BASE}/reviews`);
+
+    if(!response.ok) {
+        throw new Error("failed to fetch reviews");
+    }
+
+    return response.json();
+}
