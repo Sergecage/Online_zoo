@@ -377,4 +377,11 @@ h4{
     transform: none;
   }
 
+  .arrows{
+    display: flex;
+}
+
+.animal-1, .animal-3, .animal-4, .animals-slide{
+    display: flex;
+}
 }
