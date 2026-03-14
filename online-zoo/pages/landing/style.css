@@ -38,6 +38,13 @@ section{
     padding: 28px 16px;
 }
 
+footer{
+    background-color: var(--bg-purple);
+    a{
+        color: var(--col-white)
+    }
+}
+
 ul{
     list-style: none;
 }
@@ -66,6 +73,7 @@ button{
     cursor: pointer;
     display: flex;
     align-items: center;
+    text-transform: uppercase;
     a{
         font-weight: var(--font-mob);
         font-size: var(--font-size-mob);
@@ -77,10 +85,17 @@ button{
 
 h2{
     color: var(--col-green);
+    text-transform: uppercase;
+    margin-bottom: 1rem;
+}
+
+h4{
+    background-color: var(--bg-purple);
 }
 
 .pop-up{
     display: none;
+    background: url(../../assets/images/PopUpPic.svg);
 }
 
 .header{
@@ -209,8 +224,138 @@ h2{
     justify-content: space-between;
 }
 
-.animal1{
-    background: url(../../assets/images/koala.jpg);
+.input-img{
+    background-color: var(--col-orange);
+    width: 43px;
+    height: 43px;
+    align-items: center;
+}
+
+.meet-friends .meet-container{
+    text-align: center;
+}
+
+.arrows{
+    display: none;
+}
+
+.animals-slide,.animals-slide-2{
+    display: flex;
+}
+
+.animal-1, .animal-2, .animal-3, .animal-4{
+    background-color: var(--bg-purple);
+}
+
+.animal-2, .animal-1, .animal-3, .animal-4{
+    .top-animal{
+    background-image: url(../../assets/images/Koala_card.svg);
+    width: 300px;
+    height: 600px;
+    background-size:contain;
+    background-repeat: no-repeat;
+    color: var(--col-white);
+    .animal-button{
+        background: transparent;
+        text-transform: uppercase;
+        color: var(--col-orange);
+        font-size: 20px;
+        position: relative;
+    }
+}
+}
+
+.animals-slide .animal-1 .top-animal{
+    background-image: url(../../assets/images/Panda_card.svg);
+}
+
+.animals-slide .animal-2 .top-animal{
+    background-image: url(../../assets/images/Lemur_card.svg);
+}
+
+.animals-slide .animal-3 .top-animal{
+    background-image: url(../../assets/images/Gorrila_card.svg);
+}
+
+.animals-slide .animal-4 .top-animal{
+    background-image: url(../../assets/images/Alligator_card.svg);
+}
+
+.animals-slide-2 .animal-1 .top-animal{
+    background-image: url(../../assets/images/Eagle_card.svg);
+}
+
+.animals-slide-2 .animal-3 .top-animal{
+    background-image: url(../../assets/images/Lion_card.svg);
+}
+
+.animals-slide-2 .animal-4 .top-animal{
+    background-image: url(../../assets/images/Tiger_card.svg);
+}
+
+.animal-1, .animal-3, .animal-4, .animals-slide{
+    display: none;
+}
+
+.left-h4{
+    width: fit-content;
+    padding: 0.7rem 1.5rem;
+}
+
+.card-content{
+    position: relative;
+    top: 19rem;
+}
+
+.pay-and-feed .pay-container{
+    background: var(--bg-purple);
+    color: var(--col-white);
+    text-align: center;
+}
+
+.pay-title, .users-title{
+    color: var(--col-white);
+}
+
+.payline{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.users{
+    background: linear-gradient(177.34deg, #20113D 7.26%, rgba(32, 17, 61, 0) 14.89%), linear-gradient(144.77deg, #20113D 18.53%, rgba(32, 17, 61, 0) 46.43%), url(../../assets/images/Panda-back.svg) no-repeat;;
+}
+
+.users .arrows{
+    display: none;
+}
+
+.users input{
+    border-radius: 50%;
+}
+
+.text-boxes{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.text-box{
+    background: var(--col-white);
+    color: black;
+    height: fit-content;
+    padding: 1rem 0.2rem;
+}
+
+.choose-leave{
+    text-transform: uppercase;
+    border: 2px solid white;
+    border-radius: 5%;
+}
+
+.care{
+    background-color: var(--col-white);
 }
 
 @media (min-width: 640px){}
@@ -257,4 +402,16 @@ h2{
     transform: none;
   }
 
+  .arrows{
+    display: flex;
+}
+
+.animal-1, .animal-3, .animal-4, .animals-slide{
+    display: flex;
+}
+
+.animals-slide, .animals-slide-2{
+    gap: 2rem;
+    margin: 0.5rem;
+}
 }
