@@ -38,6 +38,13 @@ section{
     padding: 28px 16px;
 }
 
+footer{
+    background-color: var(--bg-purple);
+    a{
+        color: var(--col-white)
+    }
+}
+
 ul{
     list-style: none;
 }
