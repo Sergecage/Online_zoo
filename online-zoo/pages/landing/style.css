@@ -231,10 +231,6 @@ h4{
     align-items: center;
 }
 
-.animal1{
-    background: url(../../assets/images/koala.jpg);
-}
-
 .meet-friends .meet-container{
     text-align: center;
 }
@@ -251,7 +247,7 @@ h4{
     background-color: var(--bg-purple);
 }
 
-.animal-2{
+.animal-2, .animal-1, .animal-3, .animal-4{
     .top-animal{
     background-image: url(../../assets/images/Koala_card.svg);
     width: 300px;
