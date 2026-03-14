@@ -412,5 +412,6 @@ h4{
 
 .animals-slide, .animals-slide-2{
     gap: 2rem;
+    margin: 0.5rem;
 }
 }
