@@ -13,8 +13,10 @@ const animalImages: Record<string, string> = {
 
 export function createPetCard(pet: Pet): HTMLElement {
     const card = document.createElement("div");
-
     card.className = "animal-card";
+
+    const top = document.createElement("div");
+    top.className = "top-animal";
 
     card.innerText = ``
 }
