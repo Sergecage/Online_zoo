@@ -358,6 +358,10 @@ h4{
     background-color: var(--col-white);
 }
 
+.Koala_card{
+    display: none;
+}
+
 @media (min-width: 640px){}
 
 @media (min-width: 1200px) {
@@ -413,5 +417,8 @@ h4{
 .animals-slide, .animals-slide-2{
     gap: 2rem;
     margin: 0.5rem;
+}
+.Koala_card{
+    display: block;
 }
 }
