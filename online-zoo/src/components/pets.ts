@@ -18,7 +18,17 @@ export function createPetCard(pet: Pet): HTMLElement {
     const top = document.createElement("div");
     top.className = "top-animal";
 
-    card.innerText = ``
+    card.innerHTML = `
+    <h4 class="left-h4">${pet.name}</h4>
+    <div class="card-content">
+        <h4>${pet.commonName}</h4>
+        <p>${pet.description}</p>
+        <button class="animal-button">
+            View Live Cam
+        </button>
+    </div>`;
 
     card.appendChild(top);
+
+    return card;
 }
