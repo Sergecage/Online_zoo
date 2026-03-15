@@ -243,13 +243,12 @@ h4{
     display: flex;
 }
 
-.animal-1, .animal-2, .animal-3, .animal-4{
+.animal-card{
     background-color: var(--bg-purple);
 }
 
-.animal-2, .animal-1, .animal-3, .animal-4{
+.animal-card{
     .top-animal{
-    background-image: url(../../assets/images/Koala_card.svg);
     width: 300px;
     height: 600px;
     background-size:contain;
@@ -263,34 +262,6 @@ h4{
         position: relative;
     }
 }
-}
-
-.animals-slide .animal-1 .top-animal{
-    background-image: url(../../assets/images/Panda_card.svg);
-}
-
-.animals-slide .animal-2 .top-animal{
-    background-image: url(../../assets/images/Lemur_card.svg);
-}
-
-.animals-slide .animal-3 .top-animal{
-    background-image: url(../../assets/images/Gorrila_card.svg);
-}
-
-.animals-slide .animal-4 .top-animal{
-    background-image: url(../../assets/images/Alligator_card.svg);
-}
-
-.animals-slide-2 .animal-1 .top-animal{
-    background-image: url(../../assets/images/Eagle_card.svg);
-}
-
-.animals-slide-2 .animal-3 .top-animal{
-    background-image: url(../../assets/images/Lion_card.svg);
-}
-
-.animals-slide-2 .animal-4 .top-animal{
-    background-image: url(../../assets/images/Tiger_card.svg);
 }
 
 .animal-1, .animal-3, .animal-4, .animals-slide{
@@ -358,6 +329,36 @@ h4{
     background-color: var(--col-white);
 }
 
+.Koala_card{
+    display: none;
+}
+
+.care_card{
+    width: 300px;
+    height: 600px;
+    background-size:contain;
+    background-repeat: no-repeat;
+    color: var(--col-white);
+    .animal-button{
+        background: transparent;
+        text-transform: uppercase;
+        color: var(--col-orange);
+        font-size: 20px;
+        position: relative;
+    }
+}
+
+.loader{
+    text-align: center;
+    padding: 4rem;
+}
+
+.arrow-slider{
+    display: flex;
+    overflow: hidden;
+    gap: 20px;
+}
+
 @media (min-width: 640px){}
 
 @media (min-width: 1200px) {
@@ -413,5 +414,8 @@ h4{
 .animals-slide, .animals-slide-2{
     gap: 2rem;
     margin: 0.5rem;
+}
+.Koala_card{
+    display: block;
 }
 }

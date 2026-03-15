@@ -11,7 +11,7 @@ export async function getPets() {
 }
 
 export async function getReviews(){
-    const response = await fetch(`${API_BASE}/reviews`);
+    const response = await fetch(`${API_BASE}/feedback`);
 
     if(!response.ok) {
         throw new Error("failed to fetch reviews");
