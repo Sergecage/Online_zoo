@@ -362,6 +362,21 @@ h4{
     display: none;
 }
 
+.care_card{
+    width: 300px;
+    height: 600px;
+    background-size:contain;
+    background-repeat: no-repeat;
+    color: var(--col-white);
+    .animal-button{
+        background: transparent;
+        text-transform: uppercase;
+        color: var(--col-orange);
+        font-size: 20px;
+        position: relative;
+    }
+}
+
 .loader{
     text-align: center;
     padding: 4rem;
