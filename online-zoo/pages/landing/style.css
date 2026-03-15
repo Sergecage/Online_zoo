@@ -367,6 +367,12 @@ h4{
     padding: 4rem;
 }
 
+.arrow-slider{
+    display: flex;
+    overflow: hidden;
+    gap: 20px;
+}
+
 @media (min-width: 640px){}
 
 @media (min-width: 1200px) {
