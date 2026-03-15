@@ -19,4 +19,6 @@ export function createPetCard(pet: Pet): HTMLElement {
     top.className = "top-animal";
 
     card.innerText = ``
+
+    card.appendChild(top);
 }
