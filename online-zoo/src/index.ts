@@ -1,2 +1,30 @@
+import { Pet } from "./components/pets";
 import { getPets } from "./services/api.service";
 import { createPetCard } from "./components/pets";
+
+async function loadPets() {
+
+  const container = document.querySelector(".animals-slide");
+
+  if (!container) return;
+
+  try {
+
+    const response = await getPets();
+    const pets = response.data;
+
+    pets.slice(0, 8).forEach(pet: Pet => {
+      const card = createPetCard(pet);
+      container.appendChild(card);
+    });
+
+  }
+  catch {
+
+    container.innerHTML = "Something went wrong. Please, refresh the page";
+
+  }
+
+}
+
+loadPets();
