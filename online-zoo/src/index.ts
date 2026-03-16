@@ -1,10 +1,10 @@
-import { Pet } from "./components/pets";
+import { Pet } from "./components/types";
 import { getPets } from "./services/api.service";
 import { createPetCard } from "./components/pets";
 
 async function loadPets() {
 
-  const container = document.querySelector(".animals-slide");
+  const container = document.querySelector<HTMLElement>(".animals-slide");
 
   if (!container) return;
 
