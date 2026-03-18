@@ -2,7 +2,7 @@ import { Pet } from "./components/types";
 import { getPets } from "./services/api.service";
 import { createPetCard } from "./components/pets";
 
-async function loadPets() {
+async function loadPets(): Promise<void> {
 
   const container = document.querySelector<HTMLElement>(".animals-slide");
 
@@ -21,7 +21,7 @@ async function loadPets() {
   }
   catch {
 
-    container.innerHTML = "Something went wrong. Please, refresh the page";
+    container.innerText = "Something went wrong. Please, refresh the page";
 
   }
 
