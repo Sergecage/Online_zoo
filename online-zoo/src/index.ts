@@ -1,4 +1,4 @@
-import { Pet } from "./components/types";
+import  type { Pet } from "./components/types";
 import { getPets } from "./services/api.service";
 import { createPetCard } from "./components/pets";
 
