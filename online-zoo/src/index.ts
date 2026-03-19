@@ -13,7 +13,7 @@ async function loadPets(): Promise<void> {
     const response = await getPets();
     const pets = response.data;
 
-    pets.slice(0, 8).forEach(pet: Pet => {
+    pets.slice(0, 8).forEach((pet: Pet) => {
       const card = createPetCard(pet);
       container.appendChild(card);
     });
