@@ -1,4 +1,4 @@
-import {Pet} from './types';
+import type {Pet} from './types';
 
 const animalImages: Record<string, string> = {
   "Giant Panda": "../../assets/images/Panda_card.svg",
