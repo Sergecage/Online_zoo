@@ -18,6 +18,8 @@ export function createPetCard(pet: Pet): HTMLElement {
     const top = document.createElement("div");
     top.className = "top-animal";
 
+    const image = animalImages[pet.commonName];
+
     card.innerHTML = `
     <h4 class="left-h4">${pet.name}</h4>
     <div class="card-content">
