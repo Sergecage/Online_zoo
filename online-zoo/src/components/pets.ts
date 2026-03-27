@@ -26,6 +26,10 @@ export function createPetCard(pet: Pet): HTMLElement {
         top.style.backgroundPosition = "center";
     }
 
+    const name = document.createElement("h4");
+    name.className = "left-h4";
+    name.innerText = pet.name;
+
     card.innerHTML = `
     <h4 class="left-h4">${pet.name}</h4>
     <div class="card-content">
