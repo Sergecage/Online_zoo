@@ -36,6 +36,9 @@ export function createPetCard(pet: Pet): HTMLElement {
     const title = document.createElement("h4");
     title.innerText = pet.commonName;
 
+    const desc = document.createElement("p");
+    desc.innerText = pet.description;
+
     card.innerHTML = `
     <h4 class="left-h4">${pet.name}</h4>
     <div class="card-content">
