@@ -20,6 +20,12 @@ export function createPetCard(pet: Pet): HTMLElement {
 
     const image = animalImages[pet.commonName];
 
+    if (image) {
+        top.style.backgroundImage = `url(${image})`;
+        top.style.backgroundSize = "cover";
+        top.style.backgroundPosition = "center";
+    }
+
     card.innerHTML = `
     <h4 class="left-h4">${pet.name}</h4>
     <div class="card-content">
