@@ -39,6 +39,10 @@ export function createPetCard(pet: Pet): HTMLElement {
     const desc = document.createElement("p");
     desc.innerText = pet.description;
 
+    const button = document.createElement("button");
+    button.className = "animal-button";
+    button.innerText = "View Live Cam";
+
     card.innerHTML = `
     <h4 class="left-h4">${pet.name}</h4>
     <div class="card-content">
