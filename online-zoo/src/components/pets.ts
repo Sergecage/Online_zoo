@@ -43,16 +43,8 @@ export function createPetCard(pet: Pet): HTMLElement {
     button.className = "animal-button";
     button.innerText = "View Live Cam";
 
-    card.innerHTML = `
-    <h4 class="left-h4">${pet.name}</h4>
-    <div class="card-content">
-        <h4>${pet.commonName}</h4>
-        <p>${pet.description}</p>
-        <button class="animal-button">
-            View Live Cam
-        </button>
-    </div>`;
-
+    content.append(title, desc, button);
+    top.append(name, content);
     card.appendChild(top);
 
     return card;
