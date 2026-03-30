@@ -1,4 +1,4 @@
-const API_BASE = 'https://vsqsnqnxkh.execute-api.eu-central-1.amazonaws.com/prod/docs/openapi.json';
+const API_BASE = 'https://vsqsnqnxkh.execute-api.eu-central-1.amazonaws.com/prod';
 
 export async function getPets() {
     const response = await fetch(`${API_BASE}/pets`);
