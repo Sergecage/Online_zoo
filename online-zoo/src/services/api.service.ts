@@ -3,11 +3,15 @@ const API_BASE = 'https://vsqsnqnxkh.execute-api.eu-central-1.amazonaws.com/prod
 export async function getPets() {
     const response = await fetch(`${API_BASE}/pets`);
 
+    console.log('status:', response.status);
+
     if(!response.ok) {
         throw new Error("failed to fetch pets");
     }
+    const result = await response.json();
+    
 
-    return response.json();
+    return result.data;
 }
 
 export async function getReviews(){
@@ -17,5 +21,8 @@ export async function getReviews(){
         throw new Error("failed to fetch reviews");
     }
 
-    return response.json();
+    const result = await response.json();
+    
+
+    return result.data;
 }
