@@ -1,16 +1,16 @@
+import type {Pet} from '../components/types';
+
 const API_BASE = 'https://vsqsnqnxkh.execute-api.eu-central-1.amazonaws.com/prod';
 
-export async function getPets() {
-    const response = await fetch(`${API_BASE}/pets`);
 
-    console.log('status:', response.status);
+export async function getPets(): Promise<Pet[]> {
+    const response = await fetch(`${API_BASE}/pets`);
 
     if(!response.ok) {
         throw new Error("failed to fetch pets");
     }
-    const result = await response.json();
+    const result: {data: Pet[]} = await response.json();
     
-
     return result.data;
 }
 
@@ -23,6 +23,5 @@ export async function getReviews(){
 
     const result = await response.json();
     
-
     return result.data;
 }
