@@ -9,9 +9,14 @@ export async function getPets(): Promise<Pet[]> {
     if(!response.ok) {
         throw new Error("failed to fetch pets");
     }
-    const result: {data: Pet[]} = await response.json();
+    const result = await response.json();
     
-    return result.data;
+    return result.data.map((item: any) => ({
+        id: item.id,
+        name: item.name,
+        commonName: item.common_name,
+        description: item.description,
+    }));
 }
 
 export async function getReviews(){
