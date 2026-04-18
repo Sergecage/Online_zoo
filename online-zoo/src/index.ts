@@ -10,8 +10,7 @@ export async function loadPets(): Promise<void> {
 
   try {
 
-    const response = await getPets();
-    const pets = response.data;
+    const pets = await getPets();
 
     pets.slice(0, 8).forEach((pet: Pet) => {
       const card = createPetCard(pet);
