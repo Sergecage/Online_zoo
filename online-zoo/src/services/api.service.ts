@@ -5,11 +5,13 @@ const API_BASE = 'https://vsqsnqnxkh.execute-api.eu-central-1.amazonaws.com/prod
 
 export async function getPets(): Promise<Pet[]> {
     const response = await fetch(`${API_BASE}/pets`);
+    
 
     if(!response.ok) {
         throw new Error("failed to fetch pets");
     }
     const result = await response.json();
+    console.log(result);
     
     return result.data.map((item: any) => ({
         id: item.id,
