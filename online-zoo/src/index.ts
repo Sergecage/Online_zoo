@@ -2,7 +2,7 @@ import  type { Pet } from "./components/types";
 import { getPets } from "./services/api.service";
 import { createPetCard } from "./components/pets";
 
-async function loadPets(): Promise<void> {
+export async function loadPets(): Promise<void> {
 
   const container = document.querySelector<HTMLElement>(".animals-slide");
 
