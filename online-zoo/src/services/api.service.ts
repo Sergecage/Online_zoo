@@ -14,7 +14,7 @@ export async function getPets(): Promise<Pet[]> {
     const result: ApiResponse = await response.json();
     console.log(result);
     
-    return result.data.map((item) => ({
+    return result.data.map((item: Pet) => ({
         id: item.id,
         name: item.name,
         commonName: item.commonName,
