@@ -62,7 +62,7 @@ p{
     line-height: 150%;
 }
 
-button{
+.btn{
     border-radius: 5px;
     border: transparent;
     padding: 26px 45px;
