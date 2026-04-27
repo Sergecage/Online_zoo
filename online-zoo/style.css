@@ -62,7 +62,7 @@ p{
     line-height: 150%;
 }
 
-button{
+.btn{
     border-radius: 5px;
     border: transparent;
     padding: 26px 45px;
@@ -239,8 +239,10 @@ h4{
     display: none;
 }
 
-.animals-slide,.animals-slide-2{
-    display: flex;
+.animals-slide{
+    display: grid;
+    gap: 20px;
+    grid-template-columns: 1fr;
 }
 
 .animal-card{
@@ -262,10 +264,6 @@ h4{
         position: relative;
     }
 }
-}
-
-.animal-1, .animal-3, .animal-4, .animals-slide{
-    display: none;
 }
 
 .left-h4{
@@ -407,13 +405,9 @@ h4{
     display: flex;
 }
 
-.animal-1, .animal-3, .animal-4, .animals-slide{
-    display: flex;
-}
 
-.animals-slide, .animals-slide-2{
-    gap: 2rem;
-    margin: 0.5rem;
+.animals-slide{
+    grid-template-columns: repeat(4, 1fr);
 }
 .Koala_card{
     display: block;

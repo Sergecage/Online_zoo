@@ -13,3 +13,7 @@ export interface Review {
     text: string;
     name: string;
 }
+
+export interface ApiResponse {
+    data: Pet[];
+}
