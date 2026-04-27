@@ -239,8 +239,11 @@ h4{
     display: none;
 }
 
-.animals-slide,.animals-slide-2{
+.animals-slide{
     display: flex;
+    gap: 20px;
+    overflow-x: auto;
+    scroll-behavior: smooth;
 }
 
 .animal-card{
