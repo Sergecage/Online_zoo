@@ -10,6 +10,10 @@ nextBtn?.addEventListener('click', () => {
   container?.scrollBy({left: 300, behavior: 'smooth'});
 });
 
+prevBtn?.addEventListener('click', () => {
+  container?.scrollBy({left: -300, behavior: 'smooth'});
+});
+
 export async function loadPets(): Promise<void> {
 
   const container = document.querySelector<HTMLElement>(".animals-slide");
