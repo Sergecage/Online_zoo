@@ -15,16 +15,11 @@ export function createPetCard(pet: Pet): HTMLElement {
     const card = document.createElement("div");
     card.className = "animal-card";
 
-    const top = document.createElement("div");
-    top.className = "top-animal";
 
-    const image = animalImages[pet.commonName];
-
-    if (image) {
-        top.style.backgroundImage = `url(${image})`;
-        top.style.backgroundSize = "cover";
-        top.style.backgroundPosition = "center";
-    }
+    const image = document.createElement("img");
+    image.className = "animal-image";
+    image.src = animalImages[pet.commonName];
+    image.alt = pet.commonName;
 
     const name = document.createElement("h4");
     name.className = "left-h4";
@@ -44,8 +39,7 @@ export function createPetCard(pet: Pet): HTMLElement {
     button.innerText = "View Live Cam";
 
     content.append(title, desc, button);
-    top.append(name, content);
-    card.appendChild(top);
+    card.append(image, content);
 
     return card;
 }
