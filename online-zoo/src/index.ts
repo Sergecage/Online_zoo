@@ -2,6 +2,18 @@ import  type { Pet } from "./components/types";
 import { getPets } from "./services/api.service";
 import { createPetCard } from "./components/pets";
 
+const nextBtn = document.getElementById('pets-next');
+const prevBtn = document.getElementById('pets-prev');
+const container = document.querySelector<HTMLElement>('.animal-slide');
+
+nextBtn?.addEventListener('click', () => {
+  container?.scrollBy({left: 300, behavior: 'smooth'});
+});
+
+prevBtn?.addEventListener('click', () => {
+  container?.scrollBy({left: -300, behavior: 'smooth'});
+});
+
 export async function loadPets(): Promise<void> {
 
   const container = document.querySelector<HTMLElement>(".animals-slide");
