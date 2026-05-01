@@ -1,14 +1,14 @@
 import type {Pet} from './types';
 
 const animalImages: Record<string, string> = {
-  "Giant Panda": "src/assets/images/Panda_card.svg",
-  "Madagascarian Lemur": "src/assets/images/Lemur_card.svg",
-  "Gorilla in Congo": "src/assets/images/Gorrila_card.svg",
-  "Chinese Alligator": "src/assets/images/Alligator_card.svg",
-  "West End Bald Eagles": "src/assets/images/Eagle_card.svg",
-  "Australian Koala": "src/assets/images/Koala_card.svg",
-  "African Lion": "src/assets/images/Lion_card.svg",
-  "Sumatran Tiger": "src/assets/images/Tiger_card.svg",
+  "Giant Panda": "/assets/images/Panda_card.svg",
+  "Madagascarian Lemur": "/assets/images/Lemur_card.svg",
+  "Gorilla in Congo": "/assets/images/Gorrila_card.svg",
+  "Chinese Alligator": "/assets/images/Alligator_card.svg",
+  "West End Bald Eagles": "/assets/images/Eagle_card.svg",
+  "Australian Koala": "/assets/images/Koala_card.svg",
+  "African Lion": "/assets/images/Lion_card.svg",
+  "Sumatran Tiger": "/assets/images/Tiger_card.svg",
 };
 
 export function createPetCard(pet: Pet): HTMLElement {
