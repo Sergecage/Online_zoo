@@ -254,14 +254,15 @@ h4{
     flex-direction: column;
 }
 
-.animal-card{
-    .animal-button{
-        background: transparent;
-        text-transform: uppercase;
-        color: var(--col-orange);
-        font-size: 20px;
-        position: relative;
-    }
+.animal-button{
+    margin-top: auto;
+    background: transparent;
+    border: 1px solid var(--col-orange);
+    color: var(--col-orange);
+    padding: 12px;
+    text-transform: uppercase;
+    cursor: pointer;
+    border-radius: 6px;
 }
 
 .animal-image {
@@ -274,11 +275,16 @@ h4{
 .left-h4{
     width: fit-content;
     padding: 0.7rem 1.5rem;
+    background-color: var(--col-orange);
+    border-radius: 4px;
+    font-size: 14px;
 }
 
 .card-content{
-    position: relative;
-    top: 19rem;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
 }
 
 .pay-and-feed .pay-container{
