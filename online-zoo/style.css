@@ -224,6 +224,13 @@ h4{
     justify-content: space-between;
 }
 
+#donate{
+    color: var(--col-white);
+    width: fit-content;
+    height: fit-content;
+    font-family: var(--font-main);
+}
+
 .input-img{
     background-color: var(--col-orange);
     width: 43px;
