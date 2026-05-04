@@ -297,6 +297,11 @@ h4{
     gap: 16px;
 }
 
+.choose{
+    font-weight: 600;
+    border: 1px solid #20113D;
+}
+
 .pay-and-feed .pay-container{
     background: var(--bg-purple);
     color: var(--col-white);
