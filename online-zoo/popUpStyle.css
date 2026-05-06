@@ -59,3 +59,7 @@
     text-decoration: none;
     transition: 0.2s ease;
 }
+
+.popup-btn:hover{
+    opacity: 0.8;
+}
