@@ -6,3 +6,7 @@ window.addEventListener("load", () => {
         popup?.classList.add("active");
     }, 1500);
 });
+
+closeBtn?.addEventListener("click", () => {
+    popup?.classList.remove("active");
+});
