@@ -10,3 +10,9 @@ window.addEventListener("load", () => {
 closeBtn?.addEventListener("click", () => {
     popup?.classList.remove("active");
 });
+
+popup?.addEventListener('click', (el) => {
+    if (el.target === popup){
+        popup.classList.remove("active");
+    }
+});
