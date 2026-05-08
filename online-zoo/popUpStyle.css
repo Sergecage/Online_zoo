@@ -91,3 +91,8 @@
     text-transform: uppercase;
     color: var(--col-orange);
 }
+
+.popup-paragraph{
+    font-size: 18px;
+    line-height: 150%;
+}
