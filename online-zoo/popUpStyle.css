@@ -105,4 +105,7 @@
 .popup-list{
     display: flex;
     align-items: flex-start;
+    li{
+        background-color: var(--col-green);
+    }
 }
