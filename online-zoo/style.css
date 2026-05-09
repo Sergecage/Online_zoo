@@ -224,6 +224,13 @@ h4{
     justify-content: space-between;
 }
 
+#donate{
+    color: var(--col-white);
+    width: fit-content;
+    height: fit-content;
+    font-family: var(--font-main);
+}
+
 .input-img{
     background-color: var(--col-orange);
     width: 43px;
@@ -252,16 +259,20 @@ h4{
     color: var(--col-white);
     display: flex;
     flex-direction: column;
+    &:hover{
+        transform: scale(1.1);
+    }
 }
 
-.animal-card{
-    .animal-button{
-        background: transparent;
-        text-transform: uppercase;
-        color: var(--col-orange);
-        font-size: 20px;
-        position: relative;
-    }
+.animal-button{
+    margin-top: auto;
+    background: transparent;
+    border: 1px solid var(--col-orange);
+    color: var(--col-orange);
+    padding: 12px;
+    text-transform: uppercase;
+    cursor: pointer;
+    border-radius: 6px;
 }
 
 .animal-image {
@@ -274,11 +285,25 @@ h4{
 .left-h4{
     width: fit-content;
     padding: 0.7rem 1.5rem;
+    background-color: var(--col-orange);
+    border-radius: 4px;
+    font-size: 14px;
 }
 
 .card-content{
-    position: relative;
-    top: 19rem;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.choose{
+    font-weight: 600;
+    border: 1px solid #20113D;
+    color: var(--bg-purple);
+    font-style: normal;
+    font-size: 18px;
+    text-transform: uppercase;
 }
 
 .pay-and-feed .pay-container{
