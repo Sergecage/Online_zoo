@@ -78,7 +78,7 @@
     cursor: pointer;
 }
 
-#together-pop{
+.popup.together{
     background: #FFF;
 }
 
@@ -100,11 +100,13 @@
 .popup-paragraph{
     font-size: 18px;
     line-height: 150%;
+    color: black;
 }
 
 .popup-list{
     display: flex;
     align-items: flex-start;
+    gap: 1em;
     li{
         background-color: var(--col-green);
     }
