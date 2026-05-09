@@ -78,6 +78,10 @@
     cursor: pointer;
 }
 
+#together-pop{
+    background: #FFF;
+}
+
 .together-picture{
     background: url(./public/assets/images/PopUpPic.svg);
     height: 387px;
