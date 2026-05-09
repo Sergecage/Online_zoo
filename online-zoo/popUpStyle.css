@@ -85,6 +85,7 @@
 .together-picture{
     background: url(./public/assets/images/PopUpPic.svg);
     height: 387px;
+    width: 100%;
 }
 
 .popup-headline{
