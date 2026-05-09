@@ -4,7 +4,7 @@ const closeBtn = document.getElementById('close-popup');
 window.addEventListener("load", () => {
     setTimeout(() => {
         popup?.classList.add("active");
-    }, 1500);
+    }, 3000);
 });
 
 closeBtn?.addEventListener("click", () => {
